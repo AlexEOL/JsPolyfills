@@ -1,6 +1,7 @@
 /**
  * concat polify
  *
+ * @method     concat
  * @return     {Array}  (description_of_the_return_value)
  */
 function concat() {
