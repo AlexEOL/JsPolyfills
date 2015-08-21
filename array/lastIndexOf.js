@@ -14,7 +14,7 @@ function lastIndexOf(searchEl, fromIndex) {
   };
 
   var returnIndex = -1,
-      i           = arguments.length === 2 ? (fromIndex === null || fromIndex === undefined ? 0 : ~~fromIndex) : this.length;
+      i           = arguments.length > 1 ? (fromIndex === null || fromIndex === undefined ? 0 : ~~fromIndex) : this.length;
 
   while (i > 0) {
     if (this[i] === searchEl) {

@@ -11,5 +11,5 @@ function pop() {
     throw new TypeError("Array.prototype.pop called on null or undefined");
   };
   
-  return [this[this.length-1], this.length--][0];
+  return [this[this.length - 1], this.length - 1 >= 0 ? this.length-- : void 0][0];
 };
