@@ -5,6 +5,8 @@
  * @return     {Array}  (description_of_the_return_value)
  */
 function concat() {
+  "use strict";
+  
   var array  = [],
       args   = arguments,
       i      = 0,

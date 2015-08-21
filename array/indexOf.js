@@ -14,7 +14,7 @@ function indexOf(searchEl, fromIndex) {
   };
 
   var returnIndex = -1,
-      i           = ~~fromIndex || 0,
+      i           = ~~fromIndex,
       length      = this.length;
 
   while (i < length) {
