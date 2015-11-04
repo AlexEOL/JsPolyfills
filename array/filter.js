@@ -1,12 +1,22 @@
 /**
  * filter polify
  *
+ * @method     filter
  * @param      {Function}  callback  (description)
- * @param      {<type>}  context   (description)
- *
- * @return     {Array}   (description_of_the_return_value)
+ * @param      {Object}    context   (description)
+ * @return     {Array}     (description_of_the_return_value)
  */
 function filter(callback, context) {
+  "use strict";
+
+  if (this === null || this === undefined) {
+    throw new TypeError("Array.prototype.filter called on null or undefined");
+  };
+
+  if (typeof callback !== "function") {
+    throw new TypeError(callback + " is not a function");
+  };
+
   var length   = this.length,
       i        = 0,
       result   = [];
